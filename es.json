@@ -48,6 +48,10 @@
     "zh": "Chino",
     "ja": "Japonés"
   },
+  "welcome": {
+    "title": "Bienvenido a Excelendar",
+    "description": "Importe su calendario de Outlook a Excel para ver, analizar y editar eventos en masa. Exporte los cambios de vuelta a Outlook con un clic."
+  },
   "taskpane": {
     "title": "Sincronización de Calendario Excelendar",
     "description": "Importar y exportar eventos de calendario entre Excel y Outlook",
@@ -225,6 +229,9 @@
     "preferEventDateTimeModalShowDisplay": "Las columnas de Visualización (su zona horaria) se mostrarán y las columnas de Evento (zona horaria original) se ocultarán.",
     "preferEventDateTimeModalYes": "Sí, actualizar",
     "preferEventDateTimeModalNo": "No, mantener actual",
+    "ignoreTimezoneMismatch": "Permitir Zona Horaria Diferente (esta hoja)",
+    "ignoreTimezoneMismatchHelp": "Cuando está habilitado, la advertencia de discrepancia de zona horaria no aparecerá para esta hoja, permitiendo que mantenga una zona horaria diferente a la de su buzón.",
+    "ignoreTimezoneMismatchDisabledHint": "Esta configuración no tiene efecto cuando \"Nunca Preguntar ni Actualizar\" está seleccionado abajo.",
     "keepDeletedEventDetails": "Mantener Detalles de Eventos Eliminados",
     "keepDeletedEventDetailsHelp": "Cuando está habilitado (predeterminado), los eventos eliminados conservan el título (tachado) y la fecha de inicio como referencia. Cuando está deshabilitado, las filas eliminadas se borran completamente.",
     "columnLayout": "Diseño de Columnas",
@@ -294,6 +301,18 @@
     "leaveEmpty": "Dejar Vacío",
     "importData": "Importar Datos",
     "importing": "Importando..."
+  },
+  "timezoneChangeModal": {
+    "title": "Discrepancia de Zona Horaria",
+    "description": "La zona horaria de visualización de su hoja difiere de la zona horaria de su buzón",
+    "sheetTimezone": "Zona Horaria de Visualización de la Hoja",
+    "mailboxTimezone": "Zona Horaria del Buzón",
+    "updatePrompt": "¿Desea actualizar la zona horaria de visualización de la hoja para que coincida con la zona horaria de su buzón? Esto afectará cómo se muestran las fechas y horas de los eventos en las columnas de visualización.",
+    "dontAskThisSheet": "No volver a preguntar para esta hoja",
+    "rememberChoiceHint": "Esta hoja podrá mantener una zona horaria diferente a la de su buzón.",
+    "keepCurrent": "Mantener Actual",
+    "updating": "Actualizando...",
+    "updateTimezone": "Actualizar Zona Horaria"
   },
   "services": {
     "columnMetadata": {

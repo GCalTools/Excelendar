@@ -48,6 +48,10 @@
     "zh": "中文",
     "ja": "日语"
   },
+  "welcome": {
+    "title": "欢迎使用 Excelendar",
+    "description": "将您的 Outlook 日历导入 Excel，以查看、分析和批量编辑事件。一键将更改导出回 Outlook。"
+  },
   "taskpane": {
     "title": "Excelendar 日历同步",
     "description": "在 Excel 和 Outlook 之间导入和导出日历事件",
@@ -225,6 +229,9 @@
     "preferEventDateTimeModalShowDisplay": "显示列（您的时区）将显示，事件列（原始时区）将隐藏。",
     "preferEventDateTimeModalYes": "是，更新",
     "preferEventDateTimeModalNo": "否，保持不变",
+    "ignoreTimezoneMismatch": "允许不同时区（此工作表）",
+    "ignoreTimezoneMismatchHelp": "启用时，此工作表不会显示时区不匹配警告，允许其保持与邮箱不同的时区。",
+    "ignoreTimezoneMismatchDisabledHint": "当下方选择'从不询问或更新'时，此设置无效。",
     "keepDeletedEventDetails": "保留已删除事件的详细信息",
     "keepDeletedEventDetailsHelp": "启用时（默认），已删除的事件保留标题（带删除线）和开始日期作为参考。禁用时，已删除的行将被完全清除。",
     "columnLayout": "列布局",
@@ -294,6 +301,18 @@
     "leaveEmpty": "留空",
     "importData": "导入数据",
     "importing": "导入中..."
+  },
+  "timezoneChangeModal": {
+    "title": "时区不匹配",
+    "description": "您的工作表显示时区与邮箱时区不同",
+    "sheetTimezone": "工作表显示时区",
+    "mailboxTimezone": "邮箱时区",
+    "updatePrompt": "您想更新工作表显示时区以匹配您的邮箱时区吗？这将影响显示列中事件日期和时间的显示方式。",
+    "dontAskThisSheet": "此工作表不再询问",
+    "rememberChoiceHint": "此工作表将被允许保持与邮箱不同的时区。",
+    "keepCurrent": "保持当前",
+    "updating": "更新中...",
+    "updateTimezone": "更新时区"
   },
   "services": {
     "columnMetadata": {

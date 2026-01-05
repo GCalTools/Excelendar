@@ -48,6 +48,10 @@
     "zh": "Chinese",
     "ja": "Japanese"
   },
+  "welcome": {
+    "title": "Welcome to Excelendar",
+    "description": "Import your Outlook calendar into Excel to view, analyze, and bulk-edit events. Export changes back to Outlook with one click."
+  },
   "taskpane": {
     "title": "Excelendar Calendar Sync",
     "description": "Import and export calendar events between Excel and Outlook",
@@ -228,6 +232,9 @@
     "preferEventDateTimeModalShowDisplay": "Display columns (your timezone) will be shown and Event columns (original timezone) will be hidden.",
     "preferEventDateTimeModalYes": "Yes, update",
     "preferEventDateTimeModalNo": "No, keep current",
+    "ignoreTimezoneMismatch": "Allow Different Timezone (this sheet)",
+    "ignoreTimezoneMismatchHelp": "When enabled, the timezone mismatch warning will not appear for this sheet, allowing it to keep a different timezone from your mailbox.",
+    "ignoreTimezoneMismatchDisabledHint": "This setting has no effect when \"Never Ask or Update\" is selected below.",
     "keepDeletedEventDetails": "Keep Deleted Event Details",
     "keepDeletedEventDetailsHelp": "When enabled (default), deleted events retain the title (with strikethrough) and start date for reference. When disabled, deleted rows are completely cleared.",
     "columnLayout": "Column Layout",
@@ -297,6 +304,18 @@
     "leaveEmpty": "Leave Empty",
     "importData": "Import Data",
     "importing": "Importing..."
+  },
+  "timezoneChangeModal": {
+    "title": "Timezone Mismatch",
+    "description": "Your sheet display timezone differs from your mailbox timezone",
+    "sheetTimezone": "Sheet Display Timezone",
+    "mailboxTimezone": "Mailbox Timezone",
+    "updatePrompt": "Would you like to update the sheet display timezone to match your mailbox timezone? This will affect how event dates and times are displayed in the Display columns.",
+    "dontAskThisSheet": "Don't ask again for this sheet",
+    "rememberChoiceHint": "This sheet will be allowed to keep a different timezone from your mailbox.",
+    "keepCurrent": "Keep Current",
+    "updating": "Updating...",
+    "updateTimezone": "Update Time Zone"
   },
   "services": {
     "columnMetadata": {

@@ -48,6 +48,10 @@
     "zh": "Chinesisch",
     "ja": "Japanisch"
   },
+  "welcome": {
+    "title": "Willkommen bei Excelendar",
+    "description": "Importieren Sie Ihren Outlook-Kalender in Excel, um Termine anzuzeigen, zu analysieren und massenweise zu bearbeiten. Exportieren Sie Änderungen mit einem Klick zurück zu Outlook."
+  },
   "taskpane": {
     "title": "Excelendar Kalender-Synchronisation",
     "description": "Importieren und exportieren Sie Kalenderereignisse zwischen Excel und Outlook",
@@ -227,6 +231,9 @@
     "preferEventDateTimeModalShowDisplay": "Anzeige-Spalten (Ihre Zeitzone) werden angezeigt und Ereignis-Spalten (ursprüngliche Zeitzone) werden ausgeblendet.",
     "preferEventDateTimeModalYes": "Ja, aktualisieren",
     "preferEventDateTimeModalNo": "Nein, beibehalten",
+    "ignoreTimezoneMismatch": "Andere Zeitzone erlauben (dieses Blatt)",
+    "ignoreTimezoneMismatchHelp": "Wenn aktiviert, wird die Zeitzonendiskrepanz-Warnung für dieses Blatt nicht angezeigt, sodass es eine andere Zeitzone als Ihr Postfach behalten kann.",
+    "ignoreTimezoneMismatchDisabledHint": "Diese Einstellung hat keine Wirkung, wenn unten \"Nie nachfragen oder aktualisieren\" ausgewählt ist.",
     "keepDeletedEventDetails": "Gelöschte Ereignisdetails behalten",
     "keepDeletedEventDetailsHelp": "Wenn aktiviert (Standard), behalten gelöschte Ereignisse den Titel (durchgestrichen) und das Startdatum als Referenz. Wenn deaktiviert, werden gelöschte Zeilen vollständig geleert.",
     "columnLayout": "Spaltenlayout",
@@ -296,6 +303,18 @@
     "leaveEmpty": "Leer Lassen",
     "importData": "Daten Importieren",
     "importing": "Importiere..."
+  },
+  "timezoneChangeModal": {
+    "title": "Zeitzonenabweichung",
+    "description": "Die Anzeige-Zeitzone Ihres Blatts unterscheidet sich von Ihrer Postfach-Zeitzone",
+    "sheetTimezone": "Blatt-Anzeige-Zeitzone",
+    "mailboxTimezone": "Postfach-Zeitzone",
+    "updatePrompt": "Möchten Sie die Blatt-Anzeige-Zeitzone aktualisieren, um sie Ihrer Postfach-Zeitzone anzupassen? Dies beeinflusst, wie Ereignisdaten und -zeiten in den Anzeigespalten angezeigt werden.",
+    "dontAskThisSheet": "Für dieses Blatt nicht mehr fragen",
+    "rememberChoiceHint": "Dieses Blatt darf eine andere Zeitzone als Ihr Postfach behalten.",
+    "keepCurrent": "Aktuell Beibehalten",
+    "updating": "Aktualisiere...",
+    "updateTimezone": "Zeitzone Aktualisieren"
   },
   "services": {
     "columnMetadata": {

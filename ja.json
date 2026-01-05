@@ -48,6 +48,10 @@
     "zh": "中国語",
     "ja": "日本語"
   },
+  "welcome": {
+    "title": "Excelendar へようこそ",
+    "description": "Outlookカレンダーをエクセルにインポートして、イベントの表示、分析、一括編集ができます。変更をワンクリックでOutlookに書き戻せます。"
+  },
   "taskpane": {
     "title": "Excelendar カレンダー同期",
     "description": "ExcelとOutlook間でカレンダーイベントをインポート・エクスポート",
@@ -225,6 +229,9 @@
     "preferEventDateTimeModalShowDisplay": "表示列（あなたのタイムゾーン）が表示され、イベント列（元のタイムゾーン）が非表示になります。",
     "preferEventDateTimeModalYes": "はい、更新する",
     "preferEventDateTimeModalNo": "いいえ、現状維持",
+    "ignoreTimezoneMismatch": "別のタイムゾーンを許可（このシート）",
+    "ignoreTimezoneMismatchHelp": "有効時、このシートではタイムゾーン不一致の警告が表示されず、メールボックスとは異なるタイムゾーンを維持できます。",
+    "ignoreTimezoneMismatchDisabledHint": "下で「確認も更新もしない」が選択されている場合、この設定は効果がありません。",
     "keepDeletedEventDetails": "削除されたイベントの詳細を保持",
     "keepDeletedEventDetailsHelp": "有効時（デフォルト）は削除されたイベントのタイトル（取り消し線付き）と開始日が参照用に保持されます。無効時は削除された行が完全にクリアされます。",
     "columnLayout": "列レイアウト",
@@ -294,6 +301,18 @@
     "leaveEmpty": "空のままにする",
     "importData": "データをインポート",
     "importing": "インポート中..."
+  },
+  "timezoneChangeModal": {
+    "title": "タイムゾーンの不一致",
+    "description": "シートの表示タイムゾーンがメールボックスのタイムゾーンと異なります",
+    "sheetTimezone": "シート表示タイムゾーン",
+    "mailboxTimezone": "メールボックスタイムゾーン",
+    "updatePrompt": "シートの表示タイムゾーンをメールボックスのタイムゾーンに合わせて更新しますか？これにより、表示列でのイベントの日付と時刻の表示方法に影響します。",
+    "dontAskThisSheet": "このシートでは今後確認しない",
+    "rememberChoiceHint": "このシートはメールボックスと異なるタイムゾーンを保持できます。",
+    "keepCurrent": "現状維持",
+    "updating": "更新中...",
+    "updateTimezone": "タイムゾーンを更新"
   },
   "services": {
     "columnMetadata": {

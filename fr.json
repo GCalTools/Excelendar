@@ -48,6 +48,10 @@
     "zh": "Chinois",
     "ja": "Japonais"
   },
+  "welcome": {
+    "title": "Bienvenue sur Excelendar",
+    "description": "Importez votre calendrier Outlook dans Excel pour visualiser, analyser et modifier vos événements en masse. Exportez les modifications vers Outlook en un clic."
+  },
   "taskpane": {
     "title": "Synchronisation de Calendrier Excelendar",
     "description": "Importer et exporter des événements de calendrier entre Excel et Outlook",
@@ -207,7 +211,7 @@
     "sheetLanguageHelp": "Langue pour les en-têtes de colonnes Excel (partagée avec les collaborateurs)",
     "columnVisibility": "Visibilité des Colonnes",
     "sheetDisplayTimezone": "Fuseau Horaire d'Affichage de la Feuille",
-    "sheetDisplayTimezoneHelp": "Fuseau horaire utilisé pour afficher les dates et heures des événements dans les colonnes d'affichage",
+    "sheetDisplayTimezoneHelp": "Fuseau horaire utilisé pour afficher les dates et heures des événements",
     "timezoneSearchPlaceholder": "Tapez pour rechercher des fuseaux horaires...",
     "noTimezonesFound": "Aucun fuseau horaire trouvé",
     "mailboxTimezoneChangeBehavior": "Comportement lors du Changement de Fuseau Horaire de la Boîte Mail",
@@ -225,6 +229,9 @@
     "preferEventDateTimeModalShowDisplay": "Les colonnes Affichage (votre fuseau) seront affichées et les colonnes Événement (fuseau d'origine) seront masquées.",
     "preferEventDateTimeModalYes": "Oui, mettre à jour",
     "preferEventDateTimeModalNo": "Non, garder l'actuel",
+    "ignoreTimezoneMismatch": "Autoriser un Fuseau Horaire Différent (cette feuille)",
+    "ignoreTimezoneMismatchHelp": "Lorsqu'activé, l'avertissement de décalage de fuseau horaire n'apparaîtra pas pour cette feuille, lui permettant de conserver un fuseau horaire différent de celui de votre boîte mail.",
+    "ignoreTimezoneMismatchDisabledHint": "Ce paramètre n'a aucun effet lorsque « Ne jamais demander ni mettre à jour » est sélectionné ci-dessous.",
     "keepDeletedEventDetails": "Conserver les Détails des Événements Supprimés",
     "keepDeletedEventDetailsHelp": "Lorsqu'activé (par défaut), les événements supprimés conservent le titre (barré) et la date de début pour référence. Lorsque désactivé, les lignes supprimées sont complètement effacées.",
     "columnLayout": "Préset des Colonnes",
@@ -294,6 +301,18 @@
     "leaveEmpty": "Laisser Vide",
     "importData": "Importer les Données",
     "importing": "Importation..."
+  },
+  "timezoneChangeModal": {
+    "title": "Écart de Fuseau Horaire",
+    "description": "Le fuseau horaire d'affichage de votre feuille diffère du fuseau horaire de votre boîte mail",
+    "sheetTimezone": "Fuseau Horaire d'Affichage de la Feuille",
+    "mailboxTimezone": "Fuseau Horaire de la Boîte Mail",
+    "updatePrompt": "Voulez-vous mettre à jour le fuseau horaire d'affichage de la feuille pour correspondre au fuseau horaire de votre boîte mail ? Cela affectera la façon dont les dates et heures des événements sont affichées en mode 'Heures Locales'.",
+    "dontAskThisSheet": "Ne plus demander pour cette feuille",
+    "rememberChoiceHint": "Cette feuille sera autorisée à conserver un fuseau horaire différent de celui de votre boîte mail.",
+    "keepCurrent": "Garder l'Actuel",
+    "updating": "Mise à jour...",
+    "updateTimezone": "Mettre à Jour"
   },
   "services": {
     "columnMetadata": {
