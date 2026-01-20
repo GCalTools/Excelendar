@@ -152,6 +152,11 @@
     "plan": "Plan: {plan}",
     "features": "Características: {features}"
   },
+  "demo": {
+    "modeActive": "Modo Demo",
+    "limitations": "Sincronización limitada a una ventana de 30 días. Crea eventos dentro de tu rango importado.",
+    "startFreeTrial": "Iniciar Prueba Gratuita"
+  },
   "import": {
     "selectCalendar": "Por favor seleccione un calendario para importar",
     "selectCalendarChanges": "Por favor seleccione un calendario para importar cambios",
@@ -360,7 +365,8 @@
       "operations": "operaciones",
       "summary": "{created} creados, {updated} actualizados, {deleted} eliminados, {failed} fallidos",
       "missingEventIdForDelete": "Fila {row}: Falta el ID del evento para la operación de eliminación",
-      "startTimeAfterEndTime": "Fila {row}: La hora de inicio no puede ser posterior a la hora de fin (Inicio: {start}, Fin: {end})"
+      "startTimeAfterEndTime": "Fila {row}: La hora de inicio no puede ser posterior a la hora de fin (Inicio: {start}, Fin: {end})",
+      "demoDateRangeError": "Modo demo - los nuevos eventos deben comenzar dentro de su rango de fechas importado ({startDate} a {endDate})"
     },
     "incremental": {
       "phaseDeletingEvents": "Eliminando eventos",
@@ -1363,6 +1369,7 @@
       "error": "Error",
       "deleteAll": "Eliminar Todo",
       "deleting": "Eliminando...",
+      "cancel": "Cancelar",
       "ok": "Aceptar"
     },
     "welcome": {
@@ -1508,13 +1515,17 @@
       "dangerZone": {
         "title": "Zona de Peligro",
         "deleteAccount": "Eliminar Su Cuenta",
-        "deleteWarning": "Esto eliminará permanentemente su cuenta y todos los datos asociados, incluyendo registros de actividad, registros de errores e información de licencia. Su suscripción (si tiene alguna) permanecerá con su organización y no será eliminada.",
-        "deleteInfo": "Puede crear una nueva cuenta en cualquier momento iniciando sesión nuevamente con su cuenta de Microsoft y una licencia válida de Excelendar.",
+        "deleteWarning": "Esto eliminará permanentemente su cuenta y todos los datos asociados, incluyendo registros de actividad, registros de errores e información de licencia.",
+        "deleteInfo": "Usuarios de organización (AppSource): Su suscripción permanecerá con su organización. Puede recrear su cuenta iniciando sesión nuevamente.",
+        "deleteStripeWarning": "Usuarios personales (Stripe): Su suscripción será cancelada inmediatamente y ya no se le cobrará. Necesitará comprar una nueva suscripción para usar Excelendar nuevamente.",
         "typeDelete": "Escriba DELETE para confirmar la eliminación de la cuenta",
         "typePlaceholder": "Escriba DELETE aquí",
         "deleteButton": "Eliminar Mi Cuenta",
         "deletingAccount": "Eliminando Cuenta...",
         "confirmDelete": "Esto eliminará permanentemente su cuenta y todos los datos asociados. ¿Está absolutamente seguro?",
+        "confirmDeleteStripe": "Esto eliminará permanentemente su cuenta y cancelará su suscripción de Stripe inmediatamente. Ya no se le cobrará. ¿Está absolutamente seguro?",
+        "confirmDeleteAppSource": "Esto eliminará permanentemente su cuenta y todos los datos asociados. Su suscripción de Excelendar permanecerá activa. ¿Está absolutamente seguro?",
+        "confirmDeleteBoth": "Esto eliminará permanentemente su cuenta y cancelará su suscripción de Stripe inmediatamente. Su suscripción de AppSource permanecerá activa con su organización. ¿Está absolutamente seguro?",
         "typeDeleteError": "Por favor escriba DELETE para confirmar la eliminación de la cuenta"
       }
     }

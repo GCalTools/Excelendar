@@ -154,6 +154,11 @@
     "refreshSuccess": "Lizenz aktualisiert! Sie sind jetzt lizenziert.",
     "refreshComplete": "Lizenzprüfung abgeschlossen"
   },
+  "demo": {
+    "modeActive": "Demo-Modus",
+    "limitations": "Synchronisation auf ein 30-Tage-Fenster beschränkt. Erstellen Sie Ereignisse innerhalb Ihres importierten Bereichs.",
+    "startFreeTrial": "Kostenlose Testversion starten"
+  },
   "import": {
     "selectCalendar": "Bitte wählen Sie einen Kalender zum Importieren",
     "selectCalendarChanges": "Bitte wählen Sie einen Kalender zum Importieren von Änderungen",
@@ -362,7 +367,8 @@
       "operations": "Operationen",
       "summary": "{created} erstellt, {updated} aktualisiert, {deleted} gelöscht, {failed} fehlgeschlagen",
       "missingEventIdForDelete": "Zeile {row}: Ereignis-ID für Löschvorgang fehlt",
-      "startTimeAfterEndTime": "Zeile {row}: Startzeit kann nicht nach der Endzeit liegen (Start: {start}, Ende: {end})"
+      "startTimeAfterEndTime": "Zeile {row}: Startzeit kann nicht nach der Endzeit liegen (Start: {start}, Ende: {end})",
+      "demoDateRangeError": "Demo-Modus - neue Ereignisse müssen innerhalb Ihres importierten Datumsbereichs beginnen ({startDate} bis {endDate})"
     },
     "incremental": {
       "phaseDeletingEvents": "Ereignisse löschen",
@@ -1365,6 +1371,7 @@
       "error": "Fehler",
       "deleteAll": "Alle löschen",
       "deleting": "Wird gelöscht...",
+      "cancel": "Abbrechen",
       "ok": "OK"
     },
     "welcome": {
@@ -1510,13 +1517,17 @@
       "dangerZone": {
         "title": "Gefahrenzone",
         "deleteAccount": "Ihr Konto löschen",
-        "deleteWarning": "Dies löscht dauerhaft Ihr Konto und alle zugehörigen Daten, einschließlich Aktivitätsprotokolle, Fehlerprotokolle und Lizenzinformationen. Ihr Abonnement (falls vorhanden) verbleibt bei Ihrer Organisation und wird nicht gelöscht.",
-        "deleteInfo": "Sie können jederzeit ein neues Konto erstellen, indem Sie sich erneut mit Ihrem Microsoft-Konto und einer gültigen Excelendar-Lizenz anmelden.",
+        "deleteWarning": "Dies löscht dauerhaft Ihr Konto und alle zugehörigen Daten, einschließlich Aktivitätsprotokolle, Fehlerprotokolle und Lizenzinformationen.",
+        "deleteInfo": "Organisationsbenutzer (AppSource): Ihr Abonnement verbleibt bei Ihrer Organisation. Sie können Ihr Konto durch erneute Anmeldung neu erstellen.",
+        "deleteStripeWarning": "Persönliche Benutzer (Stripe): Ihr Abonnement wird sofort gekündigt und Sie werden nicht mehr belastet. Sie müssen ein neues Abonnement erwerben, um Excelendar wieder zu nutzen.",
         "typeDelete": "Geben Sie DELETE ein, um die Kontolöschung zu bestätigen",
         "typePlaceholder": "Geben Sie hier DELETE ein",
         "deleteButton": "Mein Konto löschen",
         "deletingAccount": "Konto wird gelöscht...",
         "confirmDelete": "Dies löscht dauerhaft Ihr Konto und alle zugehörigen Daten. Sind Sie absolut sicher?",
+        "confirmDeleteStripe": "Dies löscht dauerhaft Ihr Konto und kündigt sofort Ihr Stripe-Abonnement. Sie werden nicht mehr belastet. Sind Sie absolut sicher?",
+        "confirmDeleteAppSource": "Dies löscht dauerhaft Ihr Konto und alle zugehörigen Daten. Ihr Excelendar-Abonnement bleibt aktiv. Sind Sie absolut sicher?",
+        "confirmDeleteBoth": "Dies löscht dauerhaft Ihr Konto und kündigt sofort Ihr Stripe-Abonnement. Ihr AppSource-Abonnement bleibt bei Ihrer Organisation aktiv. Sind Sie absolut sicher?",
         "typeDeleteError": "Bitte geben Sie DELETE ein, um die Kontolöschung zu bestätigen"
       }
     }

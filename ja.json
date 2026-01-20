@@ -152,6 +152,11 @@
     "plan": "プラン：{plan}",
     "features": "機能：{features}"
   },
+  "demo": {
+    "modeActive": "デモモード",
+    "limitations": "同期は30日間のウィンドウに制限されています。インポートした範囲内でイベントを作成してください。",
+    "startFreeTrial": "無料トライアルを開始"
+  },
   "import": {
     "selectCalendar": "インポート元のカレンダーを選択してください",
     "selectCalendarChanges": "変更をインポートするカレンダーを選択してください",
@@ -360,7 +365,8 @@
       "operations": "操作",
       "summary": "{created}作成、{updated}更新、{deleted}削除、{failed}失敗",
       "missingEventIdForDelete": "行{row}：削除操作にイベントIDがありません",
-      "startTimeAfterEndTime": "行{row}：開始時刻が終了時刻より後になっています（開始：{start}、終了：{end}）"
+      "startTimeAfterEndTime": "行{row}：開始時刻が終了時刻より後になっています（開始：{start}、終了：{end}）",
+      "demoDateRangeError": "デモモード - 新しいイベントはインポートした日付範囲内で開始する必要があります（{startDate}から{endDate}）"
     },
     "incremental": {
       "phaseDeletingEvents": "イベントを削除中",
@@ -1363,6 +1369,7 @@
       "error": "エラー",
       "deleteAll": "すべて削除",
       "deleting": "削除中...",
+      "cancel": "キャンセル",
       "ok": "OK"
     },
     "welcome": {
@@ -1508,13 +1515,17 @@
       "dangerZone": {
         "title": "危険ゾーン",
         "deleteAccount": "アカウントを削除",
-        "deleteWarning": "これにより、アカウントと、アクティビティログ、エラーログ、ライセンス情報を含むすべての関連データが完全に削除されます。サブスクリプション（ある場合）は組織に残り、削除されません。",
-        "deleteInfo": "Microsoft アカウントと有効な Excelendar ライセンスで再度サインインすることで、いつでも新しいアカウントを作成できます。",
+        "deleteWarning": "これにより、アカウントと、アクティビティログ、エラーログ、ライセンス情報を含むすべての関連データが完全に削除されます。",
+        "deleteInfo": "組織ユーザー (AppSource)：サブスクリプションは組織に残ります。再度サインインすることでアカウントを再作成できます。",
+        "deleteStripeWarning": "個人ユーザー (Stripe)：サブスクリプションは直ちにキャンセルされ、請求されなくなります。Excelendar を再び使用するには、新しいサブスクリプションを購入する必要があります。",
         "typeDelete": "アカウント削除を確認するには DELETE と入力してください",
         "typePlaceholder": "ここに DELETE と入力",
         "deleteButton": "アカウントを削除",
         "deletingAccount": "アカウントを削除中...",
         "confirmDelete": "これにより、アカウントとすべての関連データが完全に削除されます。本当によろしいですか？",
+        "confirmDeleteStripe": "これにより、アカウントが完全に削除され、Stripe サブスクリプションが直ちにキャンセルされます。請求されなくなります。本当によろしいですか？",
+        "confirmDeleteAppSource": "これにより、アカウントとすべての関連データが完全に削除されます。Excelendar サブスクリプションはアクティブなままです。本当によろしいですか？",
+        "confirmDeleteBoth": "これにより、アカウントが完全に削除され、Stripe サブスクリプションが直ちにキャンセルされます。AppSource サブスクリプションは組織でアクティブなままです。本当によろしいですか？",
         "typeDeleteError": "アカウント削除を確認するには DELETE と入力してください"
       }
     }

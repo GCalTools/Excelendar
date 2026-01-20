@@ -152,6 +152,11 @@
     "plan": "计划：{plan}",
     "features": "功能：{features}"
   },
+  "demo": {
+    "modeActive": "演示模式",
+    "limitations": "同步限制为30天窗口。在导入的日期范围内创建事件。",
+    "startFreeTrial": "开始免费试用"
+  },
   "import": {
     "selectCalendar": "请选择要导入的日历",
     "selectCalendarChanges": "请选择要导入更改的日历",
@@ -360,7 +365,8 @@
       "operations": "操作",
       "summary": "{created} 创建，{updated} 更新，{deleted} 删除，{failed} 失败",
       "missingEventIdForDelete": "行 {row}：删除操作缺少事件 ID",
-      "startTimeAfterEndTime": "行 {row}：开始时间不能晚于结束时间（开始：{start}，结束：{end}）"
+      "startTimeAfterEndTime": "行 {row}：开始时间不能晚于结束时间（开始：{start}，结束：{end}）",
+      "demoDateRangeError": "演示模式 - 新事件必须在您导入的日期范围内开始（{startDate} 至 {endDate}）"
     },
     "incremental": {
       "phaseDeletingEvents": "删除事件",
@@ -1363,6 +1369,7 @@
       "error": "错误",
       "deleteAll": "全部删除",
       "deleting": "删除中...",
+      "cancel": "取消",
       "ok": "确定"
     },
     "welcome": {
@@ -1508,13 +1515,17 @@
       "dangerZone": {
         "title": "危险区域",
         "deleteAccount": "删除您的帐户",
-        "deleteWarning": "这将永久删除您的帐户和所有相关数据，包括活动日志、错误日志和许可证信息。您的订阅（如有）将保留在您的组织中，不会被删除。",
-        "deleteInfo": "您可以随时通过使用 Microsoft 帐户和有效的 Excelendar 许可证重新登录来创建新帐户。",
+        "deleteWarning": "这将永久删除您的帐户和所有相关数据，包括活动日志、错误日志和许可证信息。",
+        "deleteInfo": "组织用户 (AppSource)：您的订阅将保留在您的组织中。您可以通过重新登录来重新创建帐户。",
+        "deleteStripeWarning": "个人用户 (Stripe)：您的订阅将立即取消，您将不再被收费。您需要购买新订阅才能再次使用 Excelendar。",
         "typeDelete": "输入 DELETE 以确认删除帐户",
         "typePlaceholder": "在此输入 DELETE",
         "deleteButton": "删除我的帐户",
         "deletingAccount": "正在删除帐户...",
         "confirmDelete": "这将永久删除您的帐户和所有相关数据。您确定吗？",
+        "confirmDeleteStripe": "这将永久删除您的帐户并立即取消您的 Stripe 订阅。您将不再被收费。您确定吗？",
+        "confirmDeleteAppSource": "这将永久删除您的帐户和所有相关数据。您的 Excelendar 订阅将保持活动状态。您确定吗？",
+        "confirmDeleteBoth": "这将永久删除您的帐户并立即取消您的 Stripe 订阅。您的 AppSource 订阅将在您的组织中保持活动状态。您确定吗？",
         "typeDeleteError": "请输入 DELETE 以确认删除帐户"
       }
     }

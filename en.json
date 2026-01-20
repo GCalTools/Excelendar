@@ -155,6 +155,11 @@
     "refreshSuccess": "License refreshed! You're now licensed.",
     "refreshComplete": "License check complete"
   },
+  "demo": {
+    "modeActive": "Demo Mode",
+    "limitations": "Sync limited to a 30-day window. Create events within your imported range.",
+    "startFreeTrial": "Start Free Trial"
+  },
   "import": {
     "selectCalendar": "Please select a calendar to import from",
     "selectCalendarChanges": "Please select a calendar to import changes from",
@@ -363,7 +368,8 @@
       "operations": "operations",
       "summary": "{created} created, {updated} updated, {deleted} deleted, {failed} failed",
       "missingEventIdForDelete": "Row {row}: Missing Event ID for delete operation",
-      "startTimeAfterEndTime": "Row {row}: Start time cannot be after end time (Start: {start}, End: {end})"
+      "startTimeAfterEndTime": "Row {row}: Start time cannot be after end time (Start: {start}, End: {end})",
+      "demoDateRangeError": "Demo mode - new events must start within your imported date range ({startDate} to {endDate})"
     },
     "incremental": {
       "phaseDeletingEvents": "Deleting events",
@@ -1365,6 +1371,7 @@
       "error": "Error",
       "deleteAll": "Delete All",
       "deleting": "Deleting...",
+      "cancel": "Cancel",
       "ok": "OK"
     },
     "welcome": {
@@ -1510,13 +1517,17 @@
       "dangerZone": {
         "title": "Danger Zone",
         "deleteAccount": "Delete Your Account",
-        "deleteWarning": "This will permanently delete your account and all associated data including activity logs, error logs, and license information. Your subscription (if any) will remain with your organization and will not be deleted.",
-        "deleteInfo": "You can create a new account at any time by signing in again with your Microsoft account and a valid Excelendar license.",
+        "deleteWarning": "This will permanently delete your account and all associated data including activity logs, error logs, and license information.",
+        "deleteInfo": "Organization users (AppSource): Your subscription will remain with your organization. You can recreate your account by signing in again.",
+        "deleteStripeWarning": "Personal users (Stripe): Your subscription will be cancelled immediately and you will no longer be billed. You will need to purchase a new subscription to use Excelendar again.",
         "typeDelete": "Type DELETE to confirm account deletion",
         "typePlaceholder": "Type DELETE here",
         "deleteButton": "Delete My Account",
         "deletingAccount": "Deleting Account...",
         "confirmDelete": "This will permanently delete your account and all associated data. Are you absolutely sure?",
+        "confirmDeleteStripe": "This will permanently delete your account and cancel your Stripe subscription immediately. You will no longer be billed. Are you absolutely sure?",
+        "confirmDeleteAppSource": "This will permanently delete your account and all associated data. Your Excelendar subscription will remain active. Are you absolutely sure?",
+        "confirmDeleteBoth": "This will permanently delete your account and cancel your Stripe subscription immediately. Your AppSource subscription will remain active with your organization. Are you absolutely sure?",
         "typeDeleteError": "Please type DELETE to confirm account deletion"
       }
     }

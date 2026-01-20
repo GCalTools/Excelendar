@@ -152,6 +152,11 @@
     "plan": "Plan : {plan}",
     "features": "Fonctionnalités : {features}"
   },
+  "demo": {
+    "modeActive": "Mode Démo",
+    "limitations": "Synchronisation limitée à une fenêtre de 30 jours. Créez des événements dans votre plage importée.",
+    "startFreeTrial": "Démarrer l'Essai Gratuit"
+  },
   "import": {
     "selectCalendar": "Veuillez sélectionner un calendrier pour l'importation",
     "selectCalendarChanges": "Veuillez sélectionner un calendrier pour importer les modifications",
@@ -360,7 +365,8 @@
       "operations": "opérations",
       "summary": "{created} créés, {updated} mis à jour, {deleted} supprimés, {failed} échoués",
       "missingEventIdForDelete": "Ligne {row} : ID d'événement manquant pour l'opération de suppression",
-      "startTimeAfterEndTime": "Ligne {row} : L'heure de début ne peut pas être postérieure à l'heure de fin (Début : {start}, Fin : {end})"
+      "startTimeAfterEndTime": "Ligne {row} : L'heure de début ne peut pas être postérieure à l'heure de fin (Début : {start}, Fin : {end})",
+      "demoDateRangeError": "Mode démo - les nouveaux événements doivent commencer dans votre plage de dates importée ({startDate} au {endDate})"
     },
     "incremental": {
       "phaseDeletingEvents": "Suppression des événements",
@@ -1365,6 +1371,7 @@
       "error": "Erreur",
       "deleteAll": "Tout Supprimer",
       "deleting": "Suppression...",
+      "cancel": "Annuler",
       "ok": "OK"
     },
     "welcome": {
@@ -1510,13 +1517,17 @@
       "dangerZone": {
         "title": "Zone Dangereuse",
         "deleteAccount": "Supprimer Votre Compte",
-        "deleteWarning": "Cela supprimera définitivement votre compte et toutes les données associées, y compris les journaux d'activité, les journaux d'erreurs et les informations de licence. Votre abonnement (le cas échéant) restera avec votre organisation et ne sera pas supprimé.",
-        "deleteInfo": "Vous pouvez créer un nouveau compte à tout moment en vous reconnectant avec votre compte Microsoft et une licence Excelendar valide.",
+        "deleteWarning": "Cela supprimera définitivement votre compte et toutes les données associées, y compris les journaux d'activité, les journaux d'erreurs et les informations de licence.",
+        "deleteInfo": "Utilisateurs d'organisation (AppSource) : Votre abonnement restera avec votre organisation. Vous pouvez recréer votre compte en vous reconnectant.",
+        "deleteStripeWarning": "Utilisateurs personnels (Stripe) : Votre abonnement sera annulé immédiatement et vous ne serez plus facturé. Vous devrez acheter un nouvel abonnement pour utiliser Excelendar à nouveau.",
         "typeDelete": "Tapez DELETE pour confirmer la suppression du compte",
         "typePlaceholder": "Tapez DELETE ici",
         "deleteButton": "Supprimer Mon Compte",
         "deletingAccount": "Suppression du Compte...",
         "confirmDelete": "Cela supprimera définitivement votre compte et toutes les données associées. Êtes-vous absolument sûr ?",
+        "confirmDeleteStripe": "Cela supprimera définitivement votre compte et annulera immédiatement votre abonnement Stripe. Vous ne serez plus facturé. Êtes-vous absolument sûr ?",
+        "confirmDeleteAppSource": "Cela supprimera définitivement votre compte et toutes les données associées. Votre abonnement Excelendar restera actif. Êtes-vous absolument sûr ?",
+        "confirmDeleteBoth": "Cela supprimera définitivement votre compte et annulera immédiatement votre abonnement Stripe. Votre abonnement AppSource restera actif avec votre organisation. Êtes-vous absolument sûr ?",
         "typeDeleteError": "Veuillez taper DELETE pour confirmer la suppression du compte"
       }
     }
